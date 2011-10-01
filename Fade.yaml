@@ -5,19 +5,20 @@ log-view:
   nickname-format: '%n'
 input-text:
   font-family: 'Lucida Grande'
-  font-size: 10.0
-  background-color: '#111111'
-  color: '#ffffff'
+  font-weight: 'bold'
+  font-size: 15.0
+  background-color: '#b8c5c7'
+  color: '#23241f'
 member-list:
   font-family: 'Lucida Grande'
   font-size: 10.0
-  color: '#111111'
+  color: '#797979'
   font-weight: bold
-  background-color: '#5a5a5a'
+  background-color: '#111111'
   operator:
-    color: '#84dae9'
+    color: '#797979'
   selected:
-    color: '#dfdfdf'
+    color: '#ffffff'
     background:
       # gradient
       top-line-color: '#222'
@@ -28,21 +29,21 @@ server-tree:
   font-family: 'Lucida Grande'
   font-size: 10.0
   font-weight: 'bold'
-  background-color: '#5a5a5a'
+  background-color: '#111111'
   highlight:
     color: '#E9C062'
   newtalk:
     color: '#84dae9'
   unread:
-    color: '#84dae9'
+    color: '#d8e362'
   normal:
     active:
-      color: '#111111'
+      color: '#797979'
     inactive:
-      color: '#111111'
+      color: '#797979'
   selected:
     active:
-      color: '#dfdfdf'
+      color: '#ffffff'
     inactive:
       color: '#b0b0b0'
     background:

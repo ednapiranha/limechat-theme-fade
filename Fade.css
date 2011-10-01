@@ -34,31 +34,31 @@ a {
 
 /* Nicks */
 
-.sender[type=normal] { color: #88a1a4; margin-right: 1.5ex; }
-.sender[type=myself] { color: #4a9ea1; margin-right: 1.5ex; }
+.sender[type=normal] { color: #a2b7b9; margin-right: 1.1ex; }
+.sender[type=myself] { color: #72cddd; margin-right: 1.1ex; }
 
 /* Messages */
 .message[type=privmsg] { color: #eeeeee; }
-.message[type=action] { color: inherit;}
-.message[type=notice] { color: #daefa3; }
-.message[type=system] { color: #808080; }
-.message[type=error] { color: #ca773f; font-weight: bold; }
-.message[type=reply] { color: #f9ed97; }
-.message[type=error_reply] { color: #e3c59c; }
+.message[type=action] { color: inherit; font-style: italic; }
+.message[type=notice] { color: #99c5c6; }
+.message[type=system] { color: #444444; }
+.message[type=error] { color: #e74f50; font-weight: bold; }
+.message[type=reply] { color: #889697; }
+.message[type=error_reply] { color: #e74f50; }
 .message[type=dcc_send_send] { color: #565656; }
 .message[type=dcc_send_receive] { color: #565656; }
-.message[type=join] { color: #565656; }
-.message[type=part] { color: #565656; }
-.message[type=quit] { color: #565656; }
-.message[type=kick] { color: #abaea3; }
-.message[type=kill] { color: #abaea3; }
-.message[type=nick] { color: #565656; }
-.message[type=mode] { color: #abaea3; }
-.message[type=topic] { color: #abaea3; }
-.message[type=invite] { color: #daefa3; font-style: italic; }
-.message[type=wallops] { color: #565656; }
-.message[type=debug_send] { color: #565656; }
-.message[type=debug_receive] { color: #565656; }
+.message[type=join] { color: #a8d9e2; }
+.message[type=part] { color: #444444; }
+.message[type=quit] { color: #444444; }
+.message[type=kick] { color: #d8e362; }
+.message[type=kill] { color: #d8e362; }
+.message[type=nick] { color: #444444; }
+.message[type=mode] { color: #d8e362; }
+.message[type=topic] { color: #d8e362; }
+.message[type=invite] { color: #d8e362; font-style: italic; }
+.message[type=wallops] { color: #444444; }
+.message[type=debug_send] { color: #444444; }
+.message[type=debug_receive] { color: #444444; }
 
 .highlight {
 	color: #c6d44c;
@@ -72,32 +72,8 @@ a {
 }
 .address {
 	text-decoration: underline; word-break: break-all;
+	color: #657476;
 }
-
-/* Messages in main view, but not console */
-body.normal .message[type=privmsg]          { padding-left: 22ex; display: block; }
-
-body.normal .message[type=notice]           { padding-left: 22ex; display: block; }
-body.normal .message[type=join]             { padding-left: 22ex; }
-body.normal .message[type=part]             { padding-left: 22ex; }
-body.normal .message[type=quit]             { padding-left: 22ex; }
-body.normal .message[type=kick]             { padding-left: 22ex; }
-body.normal .message[type=kill]             { padding-left: 22ex; }
-body.normal .message[type=nick]             { padding-left: 22ex; }
-body.normal .message[type=mode]             { padding-left: 22ex; }
-body.normal .message[type=topic]            { padding-left: 22ex; }
-body.normal .message[type=invite]           { padding-left: 22ex; }
-body.normal .message[type=wallops]          { padding-left: 22ex; }
-
-body.normal .message[type=system]           { padding-left: 22ex; }
-body.normal .message[type=error]            { padding-left: 22ex; }
-body.normal .message[type=reply]            { padding-left: 22ex; display: block; }
-body.normal .message[type=error_reply]      { padding-left: 22ex; }
-body.normal .message[type=dcc_send_send]    { padding-left: 22ex; }
-body.normal .message[type=dcc_send_receive] { padding-left: 22ex; }
-
-body.normal .message[type=debug_send]       { padding-left: 22ex; }
-body.normal .message[type=debug_receive]    { padding-left: 22ex; }
 
 /* Spans in line */
 
@@ -105,13 +81,12 @@ body.normal .time {
 	display: block;
 	float: left;
 	padding-left: 1ex;
+	padding-right: 2ex;
 }
 
 body.normal .sender[type=normal], body.normal .sender[type=myself] {
 	display: block;
 	float: left;
-	padding-right: 5px;
-	padding-left: 5px;
 	text-align: left;
 	width: 15ex;
 }
@@ -144,7 +119,7 @@ body.normal .line[highlight=true] > .sender[type=normal] {
 
 body.normal .sender[type=myself]:after {
 	content: " >";
-	color: #c6d44c;
+	color: #444444;
 }
 
 .line[highlight=true] {
