@@ -4,4 +4,4 @@ Copy into ~/Library/Application Support/LimeChat/Themes
 
 ## Screenshot
 
-![Sample](https://img.skitch.com/20111004-mu4u27dntpmi9h392nuxn1qfbi.jpg)
+![Sample](https://img.skitch.com/20111015-d5affqi6rjqbe55x414akkg3qk.jpg)

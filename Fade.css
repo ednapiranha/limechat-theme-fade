@@ -1,34 +1,38 @@
 html {
-	background-color: #232323;
-	color: #eee;
-	padding: 0;
-	margin: 0;
+  background-color: #222222;
+  color: #eee;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-	margin: 0;
-	padding: 0.5ex 1.5ex;
-	font-family: 'Lucida Grande';
-	font-size: 10px;
+  margin: 0;
+  padding: 0.5ex 1.5ex;
+  font-family: 'Inconsolata';
+  font-size: 11px;
 }
 body.console {}
 body.normal {
-	line-height: 2.7ex;
+  line-height: 2.7ex;
 }
 
 hr { margin: 0.5em 2em; }
 
 a {
-	color: inherit;
+  color: inherit;
 }
 
 .inlineimage {
-	margin: 10px;
-	max-width: 400px;
-	max-height: 300px;
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  max-width: 500px;
+  max-height: 400px;
+  box-shadow: none;
+  border: 0px;
 }
 
-.line  { padding: 0.2ex 0; }
+.line  { padding: 0.2ex 0; line-height: 14px; }
 .time  { color: #8c8c8c; }
 .place { color: #9fb0af; }
 
@@ -61,69 +65,75 @@ a {
 .message[type=debug_receive] { color: #444444; }
 
 .highlight {
-	color: #c6d44c;
-	font-weight: normal;
+  color: #c6d44c;
+  font-weight: normal;
 }
 
 /* Special spans */
 
 .url {
-	word-break: break-all;
+  word-break: break-all;
 }
 .address {
-	text-decoration: underline; word-break: break-all;
-	color: #657476;
+  text-decoration: underline; word-break: break-all;
+  color: #657476;
 }
 
 /* Spans in line */
 
 body.normal .time {
-	display: block;
-	float: left;
-	padding-left: 1ex;
-	padding-right: 2ex;
+  display: block;
+  float: left;
+  padding-left: 5px;
+  padding-right: 15px;
 }
 
 body.normal .sender[type=normal], body.normal .sender[type=myself] {
-	display: block;
-	float: left;
-	text-align: left;
-	width: 15ex;
+  display: block;
+  float: left;
+  text-align: right;
+  width: 70px;
 }
 
 body.normal div.line[type=action] .sender[type=normal], div.line[type=action] .sender[type=myself] {
-	width: auto;
-	padding-left: 19ex;
-	margin-right: 1ex;
-	color: #8996A8;
-	background-color: transparent;
+  width: auto;
+  padding-left: 19ex;
+  color: #8996A8;
+  background-color: transparent;
 }
 
 body.normal div.line[type=action] .sender[type=normal]::before, div.line[type=action] .sender[type=myself]::before {
-	content: " >";
-	padding-right: 1.5ex;
+  content: "=>";
+  padding-right: 10px;
 }
 
+body.normal a {
+  color: #CF6A4C;
+  text-decoration: none;
+}
+
+body.normal a:hover {
+  text-decoration: underline;
+  color: #ccc;
+}
 
 body.normal .line[highlight=true] > .sender[type=normal] {
-	margin-left: -1ex;
-	padding-left: 0.2ex;
-	padding-right: 0.8ex;
-	-webkit-border-top-right-radius: 3px;
-	-webkit-border-bottom-right-radius: 3px;
-	line-height:3ex;
-	background-color: #3B434C;
-/*	background-color: #48515C;*/
-	color: #CF6A4C;
+  margin-left: -5px;
+  padding-left: 0.2ex;
+  padding-right: 0.8ex;
+  -webkit-border-radius: 3px;
+  line-height:3.2ex;
+  background-color: #2f343b;
+  text-indent: 3px;
+  color: #CF6A4C;
 }
 
 body.normal .sender[type=myself]:after {
-	content: " >";
-	color: #444444;
+  color: #444444;
 }
 
 .line[highlight=true] {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 /* disable funky mirc colours */
