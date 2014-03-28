@@ -92,7 +92,7 @@ body.normal .sender[type=normal], body.normal .sender[type=myself] {
   display: block;
   float: left;
   text-align: right;
-  width: 80px;
+  width: 88px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
